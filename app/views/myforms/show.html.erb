@@ -1,0 +1,11 @@
+<h1><%= @myform.title %></h1>
+
+<p><%= @myform.body %></p>
+
+<ul>
+  <li><%= link_to "Edit", edit_myform_path(@myform) %></li>
+   <li><%= link_to "Destroy", myform_path(@myform), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %></li>
+</ul>

@@ -1,0 +1,11 @@
+<h1>MyForms</h1>
+
+<ul>
+  <% @myforms.each do |myform| %>
+    <li>
+      <%= link_to myform.title, myform %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "new MyForm", new_myform_path %>
